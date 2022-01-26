@@ -1,10 +1,10 @@
 function Contact() {
   return (
     <section id="contact-component">
-      <div id="contact-get-in-touch">
-        <p>Have any questions about my services?</p>
+      <div id="contact-intro">
+        <span>Have any questions about my services?</span>
       </div>
-      <h1>AYOOSTEO</h1>
+      <h1 id="contact-ayoosteo">AYOOSTEO</h1>
       <p id="contact-title-and-location">Osteopath and Medical Acupuncturist. Based in Thurrock and Havering.</p>
       <div id="contact-details">
         <div>
