@@ -1,0 +1,33 @@
+#follow-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+  h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+  }
+  #social-links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    svg {
+      fill: $ayoosteogreen;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    svg:hover {
+      fill: $ayoosteoblue;
+    }
+  }
+  p {
+    a {
+      text-decoration: none;
+      color: $ayoosteogreen;
+    }
+    a:hover {
+      color: $ayoosteoblue;
+    }
+  }
+}

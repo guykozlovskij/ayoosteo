@@ -1,0 +1,65 @@
+#contact-component {
+  width: 100%;
+  background-color: rgb(0, 145, 179);
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    padding-bottom: 20px;
+  }
+  h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+  #contact-title-and-location {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 500px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  #contact-get-in-touch {
+    font-size: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #contact-details {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 17px;
+      color: white;
+      background-color: rgb(0, 105, 69);
+      padding: 15px;
+      border: 2px solid white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    i {
+      color: white;
+      padding-right: 10px;
+    }
+    div:hover {
+      a {
+        background-color: white;
+        color: $ayoosteogreen;
+        border: 2px solid $ayoosteogreen;
+      }
+      i {
+        color: $ayoosteogreen;
+      }
+    }
+  }
+}

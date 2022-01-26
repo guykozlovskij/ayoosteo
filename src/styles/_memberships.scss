@@ -1,0 +1,14 @@
+#memberships {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  img {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 220px;
+  }
+  #io-membership {
+    width: 150px;
+  }
+}

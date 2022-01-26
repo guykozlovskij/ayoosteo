@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'work sans', sans serif;
+  color: #303030;
+}
+
+$ayoosteogreen: rgb(0, 105, 69);
+$ayoosteoblue: rgb(0, 135, 167);
+
+@import 
+"contact",
+"follow",
+"memberships";
