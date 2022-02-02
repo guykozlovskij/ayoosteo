@@ -1,0 +1,48 @@
+.home-intro-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home-ayo-profile-image {
+  max-width: 450px;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  img {
+    width: 100%;
+  }
+}
+
+.home-intro-text {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    padding-bottom: $padding-bottom;
+    font-size: $title;
+    color: #297d2d;
+  }
+  h2 {
+    padding-bottom: $padding-bottom;
+    font-size: $intro-text;
+  }
+  p {
+    max-width: $paragraph;
+    padding-bottom: $padding-bottom;
+    font-size: $text-regular;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+#goc-registration {
+  width: 180px;
+}

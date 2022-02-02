@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'work sans', sans serif;
+  font-family: "work sans", sans serif;
   color: #303030;
 }
 
@@ -11,14 +11,108 @@ $ayoosteoblue: rgb(0, 135, 167);
 
 // Font sizes
 $title: 50px;
+$intro-text: 30px;
 $text-regular: 20px;
+
+// Text
+$paragraph: 550px;
 
 // Dimensions
 $padding-left: 25px;
 $padding-right: 25px;
 $padding-bottom: 30px;
 
+// Buttons
+$button-font-size: 17px;
+$button-padding: 15px;
+
+
+
+
+.button-green {
+  font-size: $button-font-size;
+  display: inline-block; // LOOK HERE
+  color: white;
+  background-color: $ayoosteogreen;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+
+  i {
+    color: white;
+    padding-right: 10px;
+  }
+}
+.button-green-div:hover {
+  a {
+    
+    background-color: white;
+    color: $ayoosteogreen;
+    border: 2px solid $ayoosteogreen;
+  }
+  i {
+    color: $ayoosteogreen;
+  }
+}
+
+.button-green-inverted {
+  font-size: $button-font-size;
+  color: $ayoosteogreen;
+  background-color: white;
+  padding: 15px;
+  border: 2px solid $ayoosteogreen;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  i {
+    color: white;
+    padding-right: 10px;
+  }
+}
+.button-green-inverted-div:hover {
+  a {
+    background-color: $ayoosteogreen;
+    color: white;
+    border: 2px solid $ayoosteogreen;
+  }
+  i {
+    color: $ayoosteogreen;
+  }
+}
+
+
+
+
+#home-scroll-section {
+  // background-image: url("../img/backgrounds/grid.png");
+  // background-position: center;
+  // background-attachment: fixed;
+  background-color: $ayoosteoblue;
+  height: 400px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  h2{
+    // display: flex;
+    // font-weight: normal;
+    // padding-left: $padding-left;
+    // padding-right: $padding-right;
+    // color: white;
+    // font-size: $intro-text;
+  }
+
+}
+
+
+
+
 @import 
-"contact",
-"follow",
-"memberships";
+"contact", 
+"follow", 
+"memberships", 
+"home-intro", 
+"home-services",
+"home-appointments";
