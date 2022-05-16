@@ -4,8 +4,8 @@ function HomeAppointments() {
   return (
     <section id="home-appointment-section">
       <div id="book-appointment-div">
-      <div className="button-green-inverted-div">
-          <a className="button-green-inverted" href="">View All Services</a>
+        <div id="book-appointment-button" className="button-green-inverted-div">
+          <a className="button-green-inverted" href="">Book an appointment</a>
         </div>
         <img src={AyoReceptionImg} />
       </div>
@@ -33,7 +33,6 @@ function HomeAppointments() {
       </div>
       <hr className="solid"></hr>
       <p id="registered-with">I am registered with most health insurers, including AXA-PPP, Vitality, Simply Health and many others (however, I am not linked with BUPA).</p>
-      <hr className="solid"></hr>
     </section>
   )
 }
