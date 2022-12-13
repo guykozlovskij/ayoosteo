@@ -1,1 +1,17 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "work sans", sans serif;
+  color: #303030;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro-logo {
+  max-width: 500px;
+}/*# sourceMappingURL=style.css.map */
