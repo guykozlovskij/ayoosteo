@@ -6,10 +6,28 @@
   color: #303030;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.button-green-inverted {
+  font-size: 17px;
+  color: rgb(0, 105, 69);
+  background-color: white;
+  padding: 15px;
+  border: 2px solid rgb(0, 105, 69);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button-green-inverted i {
+  color: white;
+  padding-right: 10px;
+}
+
+.button-green-inverted-div:hover a {
+  background-color: rgb(0, 105, 69);
+  color: white;
+  border: 2px solid rgb(0, 105, 69);
+}
+.button-green-inverted-div:hover i {
+  color: rgb(0, 105, 69);
 }
 
 nav {
@@ -20,6 +38,7 @@ nav {
   height: 100px;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 nav #ayoosteo-alt {
   display: none;
@@ -137,4 +156,278 @@ nav ul li {
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;
+}
+.home-intro-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-intro-section .home-ayo-profile-image {
+  max-width: 450px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+.home-intro-section .home-ayo-profile-image img {
+  width: 100%;
+}
+.home-intro-section .home-intro-text {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-intro-section .home-intro-text h1 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 50px;
+  color: #297d2d;
+}
+.home-intro-section .home-intro-text h2 {
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+.home-intro-section .home-intro-text p {
+  max-width: 550px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.home-intro-section #goc-registration {
+  width: 180px;
+}
+
+#home-service-list-section {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+#home-service-list-section img {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#home-service-list-section #service-list {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#home-service-list-section #service-list h2 {
+  color: rgb(0, 105, 69);
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+#home-service-list-section #service-list ul {
+  padding-bottom: 30px;
+}
+#home-service-list-section #service-list ul li {
+  color: rgb(0, 105, 69);
+  font-size: 20px;
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+#home-service-list-section #service-list ul li a {
+  text-decoration: none;
+}
+#home-service-list-section #service-list ul li a:hover {
+  color: rgb(0, 105, 69);
+  text-decoration: underline;
+}
+#home-service-list-section #service-list div:first-of-type {
+  padding-bottom: 30px;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  #home-service-list-section #home-service-list-section {
+    flex-direction: row-reverse;
+  }
+  #home-service-list-section #service-list div:first-of-type {
+    padding-bottom: 30px;
+  }
+}
+
+#home-scroll-section {
+  background-color: rgb(0, 135, 167);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#home-scroll-section h2 {
+  text-align: center;
+  display: flex;
+  padding-bottom: 30px;
+  font-weight: normal;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  font-size: 30px;
+}
+#home-scroll-section div {
+  display: flex;
+}
+
+#home-appointment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#home-appointment-section #book-appointment-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+#home-appointment-section #book-appointment-div button {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  border: 0px;
+  background-color: rgb(0, 105, 69);
+  padding: 15px;
+}
+#home-appointment-section #book-appointment-div button:hover {
+  background-color: rgb(0, 135, 167);
+}
+#home-appointment-section #book-appointment-div img {
+  height: 420px;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#home-appointment-section #treatment-types-div {
+  font-size: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#home-appointment-section #treatment-types-div .treatment {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+#home-appointment-section #treatment-types-div .treatment h3,
+#home-appointment-section #treatment-types-div .treatment p {
+  color: rgb(0, 105, 69);
+}
+#home-appointment-section #treatment-types-div .treatment h3 {
+  padding-bottom: 15px;
+  font-size: 24px;
+}
+#home-appointment-section #treatment-types-div .treatment p {
+  padding-bottom: 15px;
+}
+#home-appointment-section .solid {
+  border-top: 3px solid #bbb;
+  text-align: center;
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#home-appointment-section #registered-with {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  font-size: 30px;
+}
+@media (max-width: 450px) {
+  #home-appointment-section #book-appointment-div {
+    flex-direction: row-reverse;
+    padding-bottom: 500px;
+    background-color: black;
+  }
+}
+
+#contact-component {
+  width: 100%;
+  background-color: rgb(0, 135, 167);
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#contact-component h2 {
+  font-size: 30px;
+  font-weight: normal;
+  padding-bottom: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#contact-component h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+#contact-component p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  max-width: 500px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#contact-component #contact-details a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#follow-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+}
+#follow-component h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+#follow-component #social-links {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+#follow-component #social-links svg {
+  fill: rgb(0, 105, 69);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#follow-component #social-links svg:hover {
+  fill: rgb(0, 135, 167);
+}
+#follow-component p a {
+  text-decoration: none;
+  color: rgb(0, 105, 69);
+}
+#follow-component p a:hover {
+  color: rgb(0, 135, 167);
 }/*# sourceMappingURL=style.css.map */
