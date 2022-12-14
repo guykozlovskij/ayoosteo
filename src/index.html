@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AYOOSTEO</title>
     <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
   </head>
   <body>
-    <section id="homepage-intro">
-      <p>hello</p>
-      <img id="intro-logo" alt="ayoosteo logo" src="/img/logos/400PngdpiLogo.png">
-    </section>
+    <nav>
+      <img id="ayoosteo-logo" src="/img/logos/400PngdpiLogo.png" alt="ayo osteo logo">
+      <div id="ayoosteo-alt"><span id="ayoosteo-alt-1">A</span><span id="ayoosteo-alt-2">O</span></div>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>About Me</a></li>
+        <li><a>Services</a></li>
+        <li><a>Blog</a></li>
+      </ul>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Home</a></li>
+          <li><a class="menu__item" href="#">About Me</a></li>
+          <li><a class="menu__item" href="#">Services</a></li>
+          <li><a class="menu__item" href="#">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
   </body>
 </html>
