@@ -6,6 +6,30 @@
   color: #303030;
 }
 
+.button-green {
+  font-size: 17px;
+  color: white;
+  background-color: rgb(0, 105, 69);
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button-green i {
+  color: white;
+  padding-right: 10px;
+}
+
+.button-green-div:hover a {
+  background-color: white;
+  color: rgb(0, 105, 69);
+  border: 2px solid rgb(0, 105, 69);
+}
+.button-green-div:hover i {
+  color: rgb(0, 105, 69);
+}
+
 .button-green-inverted {
   font-size: 17px;
   color: rgb(0, 105, 69);
@@ -34,11 +58,13 @@ nav {
   width: 100%;
   top: 0;
   position: fixed;
-  background-color: rgb(243, 239, 238);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   height: 100px;
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  font-size: larger;
+  background-color: rgb(242, 242, 242);
 }
 nav #ayoosteo-alt {
   display: none;
@@ -56,6 +82,13 @@ nav ul li {
   list-style-type: none;
   letter-spacing: 1px;
   padding-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: rgb(0, 105, 69);
+  text-decoration: underline;
 }
 @media (max-width: 500px) {
   nav {
@@ -151,30 +184,35 @@ nav ul li {
 .hamburger-menu .menu__item {
   display: block;
   padding: 12px 24px;
-  color: rgb(255, 255, 255);
+  color: rgb(218, 218, 218);
   font-size: 25px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;
 }
-.home-intro-section {
-  padding-top: 100px;
+#home-intro-section {
+  padding-top: 200px;
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.home-intro-section .home-ayo-profile-image {
+@media (max-width: 500px) {
+  #home-intro-section {
+    padding-top: 100px;
+  }
+}
+#home-intro-section #home-ayo-profile-image {
   max-width: 450px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 30px;
 }
-.home-intro-section .home-ayo-profile-image img {
+#home-intro-section #home-ayo-profile-image img {
   width: 100%;
 }
-.home-intro-section .home-intro-text {
+#home-intro-section .home-intro-text {
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
@@ -182,24 +220,24 @@ nav ul li {
   align-items: center;
   justify-content: center;
 }
-.home-intro-section .home-intro-text h1 {
+#home-intro-section .home-intro-text h1 {
   text-align: center;
   padding-bottom: 30px;
   font-size: 50px;
   color: #297d2d;
 }
-.home-intro-section .home-intro-text h2 {
+#home-intro-section .home-intro-text h2 {
   padding-bottom: 30px;
   font-size: 30px;
 }
-.home-intro-section .home-intro-text p {
+#home-intro-section .home-intro-text p {
   max-width: 550px;
   padding-bottom: 30px;
   font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
-.home-intro-section #goc-registration {
+#home-intro-section #goc-registration {
   width: 180px;
 }
 
@@ -231,16 +269,16 @@ nav ul li {
   padding-bottom: 30px;
 }
 #home-service-list-section #service-list ul li {
-  color: rgb(0, 105, 69);
   font-size: 20px;
   padding-bottom: 20px;
   list-style-type: none;
 }
 #home-service-list-section #service-list ul li a {
   text-decoration: none;
+  color: rgb(0, 105, 69);
 }
 #home-service-list-section #service-list ul li a:hover {
-  color: rgb(0, 105, 69);
+  color: rgb(0, 135, 167);
   text-decoration: underline;
 }
 #home-service-list-section #service-list div:first-of-type {
@@ -292,16 +330,13 @@ nav ul li {
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
-#home-appointment-section #book-appointment-div button {
-  margin-top: 50px;
-  margin-left: 25px;
-  margin-right: 25px;
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-  border: 0px;
-  background-color: rgb(0, 105, 69);
-  padding: 15px;
+@media (max-width: 500px) {
+  #home-appointment-section #book-appointment-div {
+    flex-direction: column-reverse;
+  }
+  #home-appointment-section #book-appointment-div img {
+    padding-bottom: 50px;
+  }
 }
 #home-appointment-section #book-appointment-div button:hover {
   background-color: rgb(0, 135, 167);
@@ -354,13 +389,6 @@ nav ul li {
   text-align: center;
   max-width: 800px;
   font-size: 30px;
-}
-@media (max-width: 450px) {
-  #home-appointment-section #book-appointment-div {
-    flex-direction: row-reverse;
-    padding-bottom: 500px;
-    background-color: black;
-  }
 }
 
 #contact-component {

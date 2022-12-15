@@ -8,6 +8,7 @@
 
 $ayoosteogreen: rgb(0, 105, 69);
 $ayoosteoblue: rgb(0, 135, 167);
+$navcolor: rgb(242, 242, 242);
 
 // Font sizes
 $title: 50px;
@@ -26,6 +27,34 @@ $padding-top: 30px;
 // Buttons
 $button-font-size: 17px;
 $button-padding: 15px;
+
+.button-green {
+  font-size: $button-font-size;
+  // display: inline-block; // LOOK HERE
+  color: white;
+  background-color: $ayoosteogreen;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+
+  i {
+    color: white;
+    padding-right: 10px;
+  }
+}
+
+.button-green-div:hover {
+  a {
+    background-color: white;
+    color: $ayoosteogreen;
+    border: 2px solid $ayoosteogreen;
+  }
+  i {
+    color: $ayoosteogreen;
+  }
+}
 
 .button-green-inverted {
   font-size: $button-font-size;
@@ -57,11 +86,13 @@ nav {
   width: 100%;
   top: 0;
   position: fixed;
-  background-color: rgb(243, 239, 238);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   height: 100px;
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  font-size: larger;
+  background-color: $navcolor;
   #ayoosteo-alt {
     display: none;
   }
@@ -77,6 +108,13 @@ nav {
       list-style-type: none;
       letter-spacing: 1px;
       padding-right: 30px;
+      a{
+        text-decoration: none;
+      }
+    }
+    a:hover{
+      color: $ayoosteogreen;
+      text-decoration: underline;
     }
   }
   @media (max-width: 500px) {
@@ -172,7 +210,7 @@ nav {
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: rgb(255, 255, 255);
+    color: rgb(218, 218, 218);
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
@@ -183,14 +221,17 @@ nav {
   }
 }
 
-.home-intro-section {
-  padding-top: 100px;
+#home-intro-section {
+  padding-top: 200px;
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  .home-ayo-profile-image {
+  @media (max-width: 500px) {
+    padding-top: 100px;
+  }
+  #home-ayo-profile-image {
     max-width: 450px;
     padding-left: $padding-left;
     padding-right: $padding-right;
@@ -256,15 +297,15 @@ nav {
     ul {
       padding-bottom: $padding-bottom;
       li {
-        color: $ayoosteogreen;
         font-size: $text-regular;
         padding-bottom: 20px;
         list-style-type: none;
-        a{
+        a {
           text-decoration: none;
+          color: $ayoosteogreen;
         }
         a:hover {
-          color: $ayoosteogreen;
+          color: $ayoosteoblue;
           text-decoration: underline;
         }
       }
@@ -274,7 +315,7 @@ nav {
       text-align: center;
     }
   }
-  
+
   @media (max-width: 450px) {
     #home-service-list-section {
       flex-direction: row-reverse;
@@ -324,16 +365,11 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    button {
-      margin-top: 50px;
-      margin-left: 25px;
-      margin-right: 25px;
-      font-weight: bold;
-      font-size: 15px;
-      color: white;
-      border: 0px;
-      background-color: rgb(0, 105, 69);
-      padding: 15px;
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+      img{
+        padding-bottom: 50px;
+      }
     }
     button:hover {
       background-color: $ayoosteoblue;
@@ -387,13 +423,6 @@ nav {
     text-align: center;
     max-width: 800px;
     font-size: 30px;
-  }
-  @media (max-width: 450px) {
-    #book-appointment-div {
-      flex-direction: row-reverse;
-      padding-bottom: 500px;
-      background-color: black;
-    }
   }
 }
 
@@ -469,4 +498,3 @@ nav {
     }
   }
 }
-
