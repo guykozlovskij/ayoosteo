@@ -6,147 +6,140 @@
   color: #303030;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 200px;
+  @media (max-width: 500px) {
+    padding-top: 100px;
+  }
+}
+
+//? Color Palette
 $ayoosteogreen: rgb(0, 105, 69);
 $ayoosteoblue: rgb(0, 135, 167);
 $navcolor: rgb(242, 242, 242);
 
-// Font sizes
+//? Font sizes
 $title: 50px;
 $intro-text: 30px;
 $text-regular: 20px;
 
-// Text
+//? Text
 $paragraph: 550px;
+$line-height: 25px;
 
-// Dimensions
+//? Dimensions
 $padding-left: 25px;
 $padding-right: 25px;
 $padding-bottom: 30px;
 $padding-top: 30px;
 
-// Buttons
+//? Buttons
 $button-font-size: 17px;
 $button-padding: 15px;
 
-.button-green {
-  font-size: $button-font-size;
-  // display: inline-block; // LOOK HERE
-  color: white;
-  background-color: $ayoosteogreen;
-  padding: 15px;
-  border: 2px solid white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-
-  i {
-    color: white;
-    padding-right: 10px;
-  }
+//TODO Remove later
+.temp-holder {
+  padding-top: 200px;
+  font-size: 200;
+  text-align: center;
 }
 
-.button-green-div:hover {
-  a {
-    background-color: white;
-    color: $ayoosteogreen;
-    border: 2px solid $ayoosteogreen;
-  }
-  i {
-    color: $ayoosteogreen;
-  }
-}
+//* 🔁 Repeating
 
-.button-green-inverted {
-  font-size: $button-font-size;
-  color: $ayoosteogreen;
-  background-color: white;
-  padding: 15px;
-  border: 2px solid $ayoosteogreen;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  i {
-    color: white;
-    padding-right: 10px;
-  }
-}
-
-.button-green-inverted-div:hover {
-  a {
-    background-color: $ayoosteogreen;
-    color: white;
-    border: 2px solid $ayoosteogreen;
-  }
-  i {
-    color: $ayoosteogreen;
-  }
-}
-
-nav {
-  width: 100%;
-  top: 0;
-  position: fixed;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  height: 100px;
+#memberships {
   display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-  font-size: larger;
-  background-color: $navcolor;
-  #ayoosteo-alt {
-    display: none;
-  }
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 100px;
   img {
-    max-height: 80px;
-    padding-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 220px;
   }
-  ul {
-    display: flex;
-    margin-left: auto;
-    li {
-      list-style-type: none;
-      letter-spacing: 1px;
-      padding-right: 30px;
-      a{
-        text-decoration: none;
-      }
-    }
-    a:hover{
-      color: $ayoosteogreen;
-      text-decoration: underline;
-    }
+  #io-membership {
+    width: 150px;
   }
-  @media (max-width: 500px) {
-    .hamburger-menu {
-      display: block;
-    }
-    ul {
-      display: none;
-    }
-    height: 50px;
-    img {
-      display: none;
-    }
-    #ayoosteo-alt {
-      padding-left: 20px;
-      padding-right: 20px;
-      font-size: 25px;
-      display: block;
-      span {
-        font-family: "Times New Roman", Times, serif;
-      }
-      #ayoosteo-alt-1 {
-        color: $ayoosteogreen;
-      }
-      #ayoosteo-alt-2 {
-        color: $ayoosteoblue;
-      }
+}
+
+#contact-component {
+  width: 100%;
+  background-color: $ayoosteoblue;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  h2 {
+    font-size: $intro-text;
+    font-weight: normal;
+    padding-bottom: $padding-bottom;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: $title;
+    padding-bottom: $padding-bottom;
+  }
+  p {
+    color: rgb(255, 255, 255);
+    font-size: $text-regular;
+    max-width: 500px;
+    text-align: center;
+    padding-bottom: $padding-bottom;
+  }
+  #contact-details {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
     }
   }
 }
 
-.hamburger-menu {
+#follow-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+  h1 {
+    font-size: $title;
+    margin-bottom: $padding-bottom;
+  }
+  #social-links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: $padding-bottom;
+    svg {
+      fill: $ayoosteogreen;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    svg:hover {
+      fill: $ayoosteoblue;
+    }
+  }
+  p {
+    a {
+      text-decoration: none;
+      color: $ayoosteogreen;
+    }
+    a:hover {
+      color: $ayoosteoblue;
+    }
+  }
+}
+
+#hamburger-menu {
   display: none;
   #menu__toggle {
     opacity: 0;
@@ -210,7 +203,7 @@ nav {
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: rgb(218, 218, 218);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
@@ -221,16 +214,135 @@ nav {
   }
 }
 
+nav {
+  a {
+    text-decoration: none;
+  }
+  width: 100%;
+  top: 0;
+  position: fixed;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: larger;
+  background-color: $navcolor;
+  #ayoosteo-alt {
+    display: none;
+  }
+  img {
+    max-height: 80px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+  }
+  ul {
+    display: flex;
+    margin-left: auto;
+    li {
+      list-style-type: none;
+      letter-spacing: 1px;
+      padding-right: 30px;
+      a {
+        text-decoration: none;
+      }
+    }
+    a:hover {
+      color: $ayoosteogreen;
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 500px) {
+    #hamburger-menu {
+      display: block;
+    }
+    ul {
+      display: none;
+    }
+    height: 50px;
+    img {
+      display: none;
+    }
+    #ayoosteo-alt {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 25px;
+      display: block;
+      span {
+        font-family: "Times New Roman", Times, serif;
+      }
+      #ayoosteo-alt-1 {
+        color: $ayoosteogreen;
+      }
+      #ayoosteo-alt-2 {
+        color: $ayoosteoblue;
+      }
+    }
+  }
+}
+
+.button-green {
+  font-size: $button-font-size;
+  // display: inline-block; // LOOK HERE
+  color: white;
+  background-color: $ayoosteogreen;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+
+  i {
+    color: white;
+    padding-right: 10px;
+  }
+}
+
+.button-green-div:hover {
+  a {
+    background-color: white;
+    color: $ayoosteogreen;
+    border: 2px solid $ayoosteogreen;
+  }
+  i {
+    color: $ayoosteogreen;
+  }
+}
+
+.button-green-inverted {
+  font-size: $button-font-size;
+  color: $ayoosteogreen;
+  background-color: white;
+  padding: 15px;
+  border: 2px solid $ayoosteogreen;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  i {
+    color: white;
+    padding-right: 10px;
+  }
+}
+
+.button-green-inverted-div:hover {
+  a {
+    background-color: $ayoosteogreen;
+    color: white;
+    border: 2px solid $ayoosteogreen;
+  }
+  i {
+    color: $ayoosteogreen;
+  }
+}
+
+//* 🏠 Home
+
 #home-intro-section {
-  padding-top: 200px;
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  @media (max-width: 500px) {
-    padding-top: 100px;
-  }
   #home-ayo-profile-image {
     max-width: 450px;
     padding-left: $padding-left;
@@ -259,6 +371,7 @@ nav {
       font-size: $intro-text;
     }
     p {
+      line-height: $line-height;
       max-width: $paragraph;
       padding-bottom: $padding-bottom;
       font-size: $text-regular;
@@ -367,7 +480,7 @@ nav {
     padding-bottom: 50px;
     @media (max-width: 500px) {
       flex-direction: column-reverse;
-      img{
+      img {
         padding-bottom: 50px;
       }
     }
@@ -426,75 +539,80 @@ nav {
   }
 }
 
-#contact-component {
-  width: 100%;
-  background-color: $ayoosteoblue;
-  height: 550px;
+//* About 💁🏿‍♀️
+
+#about-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-left: $padding-left;
   padding-right: $padding-right;
-  h2 {
-    font-size: $intro-text;
-    font-weight: normal;
-    padding-bottom: $padding-bottom;
-    text-align: center;
-    color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #about-section {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
   }
   h1 {
-    color: rgb(255, 255, 255);
-    font-size: $title;
-    padding-bottom: $padding-bottom;
-  }
-  p {
-    color: rgb(255, 255, 255);
-    font-size: $text-regular;
-    max-width: 500px;
     text-align: center;
     padding-bottom: $padding-bottom;
+    font-size: $title;
   }
-  #contact-details {
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+  h2 {
+    padding-bottom: $padding-bottom;
+    font-size: 40px;
+    color: $ayoosteogreen;
+  }
+  p {
+    line-height: $line-height;
+    max-width: $paragraph;
+    padding-bottom: $padding-bottom;
+    font-size: $text-regular;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  padding-bottom: 100px;
+}
+
+#about-profile-image {
+  max-width: 400px;
+  padding-left: 30px;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  img {
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin-bottom: $padding-bottom;
+  }
+  h2 {
+    text-align: center;
+    color: $ayoosteogreen;
   }
 }
 
-#follow-component {
+#about-certification {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 290px;
-  h1 {
-    font-size: $title;
-    margin-bottom: $padding-bottom;
-  }
-  #social-links {
-    display: flex;
-    flex-direction: row;
+  h2 {
     padding-bottom: $padding-bottom;
-    svg {
-      fill: $ayoosteogreen;
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-    svg:hover {
-      fill: $ayoosteoblue;
-    }
+    font-size: 40px;
+    color: $ayoosteoblue;
   }
   p {
-    a {
-      text-decoration: none;
-      color: $ayoosteogreen;
-    }
-    a:hover {
-      color: $ayoosteoblue;
-    }
+    max-width: $paragraph;
+    padding-bottom: $padding-bottom;
+    font-size: $text-regular;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
