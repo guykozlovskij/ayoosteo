@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  padding-top: 200px;
+  padding-top: 150px;
   @media (max-width: 500px) {
     padding-top: 100px;
   }
@@ -446,7 +446,7 @@ nav {
   // background-position: center;
   // background-attachment: fixed;
   background-color: $ayoosteoblue;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -546,8 +546,6 @@ nav {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: $padding-left;
-  padding-right: $padding-right;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -594,6 +592,9 @@ nav {
 }
 
 #about-certification {
+  #certification-text {
+    padding-bottom: $padding-bottom;
+  }
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -609,10 +610,31 @@ nav {
     color: $ayoosteoblue;
   }
   p {
+    line-height: $line-height;
     max-width: $paragraph;
     padding-bottom: $padding-bottom;
     font-size: $text-regular;
     text-align: justify;
     text-justify: inter-word;
+  }
+  span {
+    padding-bottom: $padding-bottom;
+    font-size: $text-regular;
+    color: $ayoosteoblue;
+    padding-bottom: $padding-bottom;
+    margin-top: 500px;
+  }
+  ul {
+    padding-bottom: 50px;
+    list-style-position: inside;
+    li {
+      font-size: $text-regular;
+  
+      padding-bottom: 10px;
+    }
+  }
+  .membership-number{
+    font-weight: bold;
+    color: black;
   }
 }

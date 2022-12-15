@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 @media (max-width: 500px) {
   body {
@@ -398,7 +398,7 @@ nav ul a:hover {
 
 #home-scroll-section {
   background-color: rgb(0, 135, 167);
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -498,8 +498,6 @@ nav ul a:hover {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 25px;
-  padding-right: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -556,15 +554,38 @@ nav ul a:hover {
   align-items: center;
   justify-content: center;
 }
+#about-certification #certification-text {
+  padding-bottom: 30px;
+}
 #about-certification h2 {
   padding-bottom: 30px;
   font-size: 40px;
   color: rgb(0, 135, 167);
 }
 #about-certification p {
+  line-height: 25px;
   max-width: 550px;
   padding-bottom: 30px;
   font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
+}
+#about-certification span {
+  padding-bottom: 30px;
+  font-size: 20px;
+  color: rgb(0, 135, 167);
+  padding-bottom: 30px;
+  margin-top: 500px;
+}
+#about-certification ul {
+  padding-bottom: 50px;
+  list-style-position: inside;
+}
+#about-certification ul li {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#about-certification .membership-number {
+  font-weight: bold;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
