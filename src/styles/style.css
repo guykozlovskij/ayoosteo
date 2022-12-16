@@ -19,6 +19,18 @@ body {
   }
 }
 
+.solid {
+  border-top: 3px solid #bbb;
+  text-align: center;
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .temp-holder {
   padding-top: 200px;
   font-size: 200;
@@ -343,59 +355,6 @@ nav ul a:hover {
   width: 180px;
 }
 
-#home-service-list-section {
-  padding-left: 25px;
-  padding-right: 25px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 100px;
-}
-#home-service-list-section img {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-#home-service-list-section #service-list {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-}
-#home-service-list-section #service-list h2 {
-  color: rgb(0, 105, 69);
-  font-size: 30px;
-  padding-bottom: 30px;
-}
-#home-service-list-section #service-list ul {
-  padding-bottom: 30px;
-}
-#home-service-list-section #service-list ul li {
-  font-size: 20px;
-  padding-bottom: 20px;
-  list-style-type: none;
-}
-#home-service-list-section #service-list ul li a {
-  text-decoration: none;
-  color: rgb(0, 105, 69);
-}
-#home-service-list-section #service-list ul li a:hover {
-  color: rgb(0, 135, 167);
-  text-decoration: underline;
-}
-#home-service-list-section #service-list div:first-of-type {
-  padding-bottom: 30px;
-  text-align: center;
-}
-@media (max-width: 450px) {
-  #home-service-list-section #home-service-list-section {
-    flex-direction: row-reverse;
-  }
-  #home-service-list-section #service-list div:first-of-type {
-    padding-bottom: 30px;
-  }
-}
-
 #home-scroll-section {
   background-color: rgb(0, 135, 167);
   height: 300px;
@@ -475,13 +434,6 @@ nav ul a:hover {
 }
 #home-appointment-section #treatment-types-div .treatment p {
   padding-bottom: 15px;
-}
-#home-appointment-section .solid {
-  border-top: 3px solid #bbb;
-  text-align: center;
-  width: 50%;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 #home-appointment-section #registered-with {
   padding-left: 25px;
@@ -588,4 +540,143 @@ nav ul a:hover {
 #about-certification .membership-number {
   font-weight: bold;
   color: black;
+}
+
+#services-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+@media (max-width: 450px) {
+  #services-page {
+    padding-bottom: 0px;
+  }
+  #services-page img {
+    display: none;
+  }
+  #services-page #service-list div:first-of-type {
+    padding-bottom: 30px;
+  }
+  #services-page ul li {
+    text-align: center;
+  }
+}
+#services-page h1 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+#services-page #service-list-section {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#services-page #service-list-section img {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#services-page #service-list-section #service-list {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#services-page #service-list-section #service-list h2 {
+  color: rgb(0, 105, 69);
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+#services-page #service-list-section #service-list ul li {
+  font-size: 30px;
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+#services-page #service-list-section #service-list ul li a {
+  text-decoration: none;
+  color: rgb(0, 135, 167);
+}
+#services-page #service-list-section #service-list ul li a:hover {
+  color: rgb(0, 135, 167);
+  text-decoration: underline;
+}
+#services-page #service-list-section #service-list div:first-of-type {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.service-display-page {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.service-display-page h1 {
+  font-size: 50px;
+  color: rgb(0, 105, 69);
+  padding-bottom: 30px;
+}
+.service-display-page h2 {
+  max-width: 550px;
+  padding-bottom: 30px;
+}
+.service-display-page .services-text {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-display-page .services-text p {
+  line-height: 25px;
+  max-width: 550px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.service-display-page .services-text strong p {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.service-display-page .services-text ul {
+  list-style-position: outside;
+  padding-bottom: 30px;
+}
+.service-display-page .services-text ul li {
+  font-size: 20px;
+  max-width: 550px;
+  padding-bottom: 10px;
+}
+.service-display-page .services-text a {
+  text-decoration: none;
+  color: rgb(0, 135, 167);
+}
+.service-display-page .service-intro-image {
+  max-width: 550px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+.service-display-page .service-intro-image img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.service-display-page .emphasis {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */

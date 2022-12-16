@@ -17,6 +17,14 @@ body {
   }
 }
 
+.solid {
+  border-top: 3px solid #bbb;
+  text-align: center;
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 //? Color Palette
 $ayoosteogreen: rgb(0, 105, 69);
 $ayoosteoblue: rgb(0, 135, 167);
@@ -30,6 +38,9 @@ $text-regular: 20px;
 //? Text
 $paragraph: 550px;
 $line-height: 25px;
+.italic {
+  font-style: italic;
+}
 
 //? Dimensions
 $padding-left: 25px;
@@ -41,7 +52,6 @@ $padding-top: 30px;
 $button-font-size: 17px;
 $button-padding: 15px;
 
-//TODO Remove later
 .temp-holder {
   padding-top: 200px;
   font-size: 200;
@@ -385,62 +395,6 @@ nav {
   }
 }
 
-#home-service-list-section {
-  padding-left: $padding-left;
-  padding-right: $padding-right;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 100px;
-  img {
-    padding-left: $padding-left;
-    padding-right: $padding-right;
-  }
-  #service-list {
-    padding-left: $padding-left;
-    padding-right: $padding-right;
-    padding-bottom: $padding-bottom;
-    h2 {
-      color: $ayoosteogreen;
-      font-size: $intro-text;
-      padding-bottom: $padding-bottom;
-    }
-    ul {
-      padding-bottom: $padding-bottom;
-      li {
-        font-size: $text-regular;
-        padding-bottom: 20px;
-        list-style-type: none;
-        a {
-          text-decoration: none;
-          color: $ayoosteogreen;
-        }
-        a:hover {
-          color: $ayoosteoblue;
-          text-decoration: underline;
-        }
-      }
-    }
-    div:first-of-type {
-      padding-bottom: $padding-bottom;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 450px) {
-    #home-service-list-section {
-      flex-direction: row-reverse;
-    }
-    #service-list {
-      div:first-of-type {
-        padding-bottom: $padding-bottom;
-      }
-    }
-  }
-}
-
 #home-scroll-section {
   // background-image: url("../img/backgrounds/grid.png");
   // background-position: center;
@@ -520,13 +474,6 @@ nav {
         padding-bottom: 15px;
       }
     }
-  }
-  .solid {
-    border-top: 3px solid #bbb;
-    text-align: center;
-    width: 50%;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   #registered-with {
     padding-left: 25px;
@@ -629,12 +576,162 @@ nav {
     list-style-position: inside;
     li {
       font-size: $text-regular;
-  
+
       padding-bottom: 10px;
     }
   }
-  .membership-number{
+  .membership-number {
     font-weight: bold;
     color: black;
+  }
+}
+
+//* Services 💆🏻‍♀️
+
+#services-page {
+  @media (max-width: 450px) {
+    padding-bottom: 0px;
+    img {
+      display: none;
+    }
+    #service-list {
+      div:first-of-type {
+        padding-bottom: $padding-bottom;
+      }
+    }
+    ul {
+      li {
+        text-align: center;
+      }
+    }
+  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: $title;
+  }
+
+  #service-list-section {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+      padding-left: $padding-left;
+      padding-right: $padding-right;
+    }
+    #service-list {
+      padding-left: $padding-left;
+      padding-right: $padding-right;
+      padding-bottom: $padding-bottom;
+      h2 {
+        color: $ayoosteogreen;
+        font-size: $intro-text;
+        padding-bottom: $padding-bottom;
+      }
+      ul {
+        li {
+          font-size: 30px;
+          padding-bottom: 30px;
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: $ayoosteoblue;
+          }
+          a:hover {
+            color: $ayoosteoblue;
+            text-decoration: underline;
+          }
+        }
+      }
+      div:first-of-type {
+        padding-bottom: $padding-bottom;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.service-display-page {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  h1 {
+    font-size: $title;
+    color: $ayoosteogreen;
+    padding-bottom: $padding-bottom;
+
+  }
+  h2{
+    max-width: $paragraph;
+    padding-bottom: $padding-bottom;
+  }
+  .services-text {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      line-height: $line-height;
+      max-width: $paragraph;
+      padding-bottom: $padding-bottom;
+      font-size: $text-regular;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    strong {
+      p {
+        font-weight: bolder;
+        font-size: 25px;
+      }
+    }
+    ul {
+      list-style-position: outside;
+      padding-bottom: 30px;
+      li {
+        font-size: $text-regular;
+        max-width: $paragraph;
+        padding-bottom: 10px;
+        
+      }
+    }
+    a{
+      text-decoration: none;
+      color: $ayoosteoblue;
+    }
+  }
+  .service-intro-image {
+    max-width: $paragraph;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
+    img {
+      width: 100%;
+      padding-bottom: $padding-bottom;
+    }
+  }
+  .emphasis {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    font-size: 30px;
   }
 }
