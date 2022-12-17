@@ -17,14 +17,6 @@ body {
   }
 }
 
-.solid {
-  border-top: 3px solid #bbb;
-  text-align: center;
-  width: 50%;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 //? Color Palette
 $ayoosteogreen: rgb(0, 105, 69);
 $ayoosteoblue: rgb(0, 135, 167);
@@ -36,15 +28,15 @@ $intro-text: 30px;
 $text-regular: 20px;
 
 //? Text
-$paragraph: 550px;
+$paragraph: 650px;
 $line-height: 25px;
 .italic {
   font-style: italic;
 }
 
 //? Dimensions
-$padding-left: 25px;
-$padding-right: 25px;
+$padding-left: 20px;
+$padding-right: 20px;
 $padding-bottom: 30px;
 $padding-top: 30px;
 
@@ -56,6 +48,15 @@ $button-padding: 15px;
   padding-top: 200px;
   font-size: 200;
   text-align: center;
+}
+
+.solid {
+  border-top: 3px solid #bbb;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 //* 🔁 Repeating
@@ -496,6 +497,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
   #about-section {
     padding-left: $padding-left;
     padding-right: $padding-right;
@@ -517,13 +519,15 @@ nav {
     font-size: $text-regular;
     text-align: justify;
     text-justify: inter-word;
+    @media (max-width: 450px) {
+      text-align: start;
+    }
   }
-  padding-bottom: 100px;
 }
 
 #about-profile-image {
   max-width: 400px;
-  padding-left: 30px;
+  padding-left: $padding-left;
   padding-right: $padding-right;
   padding-bottom: $padding-bottom;
   img {
@@ -563,6 +567,9 @@ nav {
     font-size: $text-regular;
     text-align: justify;
     text-justify: inter-word;
+    @media (max-width: 450px) {
+      text-align: start;
+    }
   }
   span {
     padding-bottom: $padding-bottom;
@@ -610,7 +617,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   h1 {
     text-align: center;
     padding-bottom: 50px;
@@ -644,11 +651,10 @@ nav {
           padding-bottom: 30px;
           list-style-type: none;
           a {
-            text-decoration: none;
             color: $ayoosteoblue;
           }
           a:hover {
-            color: $ayoosteoblue;
+            color: $ayoosteogreen;
             text-decoration: underline;
           }
         }
@@ -662,37 +668,41 @@ nav {
 }
 
 .service-display-page {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-left: $padding-left;
-  padding-right: $padding-right;
   h1 {
     font-size: $title;
     color: $ayoosteogreen;
     padding-bottom: $padding-bottom;
-
+    padding-left: $padding-left;
+    padding-right: $padding-right;
   }
-  h2{
+  h2 {
     max-width: $paragraph;
     padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
   }
   .services-text {
     padding-left: $padding-left;
     padding-right: $padding-right;
+    max-width: $paragraph;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     p {
       line-height: $line-height;
-      max-width: $paragraph;
       padding-bottom: $padding-bottom;
       font-size: $text-regular;
       text-align: justify;
       text-justify: inter-word;
+      @media (max-width: 450px) {
+        text-align: start;
+      }
     }
     strong {
       p {
@@ -702,15 +712,15 @@ nav {
     }
     ul {
       list-style-position: outside;
+      padding-left: $padding-left;
       padding-bottom: 30px;
       li {
         font-size: $text-regular;
         max-width: $paragraph;
         padding-bottom: 10px;
-        
       }
     }
-    a{
+    a {
       text-decoration: none;
       color: $ayoosteoblue;
     }
@@ -725,13 +735,49 @@ nav {
       padding-bottom: $padding-bottom;
     }
   }
-  .emphasis {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    max-width: 800px;
+  #dse1 {
+    color: $ayoosteogreen;
+    font-weight: bolder;
+  }
+  #dse2 {
+    color: $ayoosteoblue;
+  }
+  #dse3 {
     font-size: 30px;
+    line-height: 35px;
+  }
+  #computer-infographic {
+    padding-bottom: $padding-bottom;
+    img {
+      width: 100%;
+      padding-bottom: $padding-bottom;
+    }
+  }
+  #dse-services {
+    padding-top: 50px;
+    div {
+      padding-bottom: $padding-bottom;
+      h3 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        color: $ayoosteogreen;
+        padding-bottom: $padding-bottom;
+      }
+      p {
+        padding-bottom: $padding-bottom;
+        // color: $ayoosteogreen
+      }
+      span {
+        font-style: italic;
+        font-size: $text-regular;
+        padding-bottom: $padding-bottom;
+      }
+      .dse-bold {
+        padding-bottom: $padding-bottom;
+        font-weight: bolder;
+        color: $ayoosteoblue;
+      }
+    }
   }
 }

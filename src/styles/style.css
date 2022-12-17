@@ -19,14 +19,6 @@ body {
   }
 }
 
-.solid {
-  border-top: 3px solid #bbb;
-  text-align: center;
-  width: 50%;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 .italic {
   font-style: italic;
 }
@@ -35,6 +27,15 @@ body {
   padding-top: 200px;
   font-size: 200;
   text-align: center;
+}
+
+.solid {
+  border-top: 3px solid #bbb;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 #memberships {
@@ -61,8 +62,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #contact-component h2 {
   font-size: 30px;
@@ -318,16 +319,16 @@ nav ul a:hover {
 }
 #home-intro-section #home-ayo-profile-image {
   max-width: 450px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 30px;
 }
 #home-intro-section #home-ayo-profile-image img {
   width: 100%;
 }
 #home-intro-section .home-intro-text {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +346,7 @@ nav ul a:hover {
 }
 #home-intro-section .home-intro-text p {
   line-height: 25px;
-  max-width: 550px;
+  max-width: 650px;
   padding-bottom: 30px;
   font-size: 20px;
   text-align: justify;
@@ -368,8 +369,8 @@ nav ul a:hover {
   display: flex;
   padding-bottom: 30px;
   font-weight: normal;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: white;
   font-size: 30px;
 }
@@ -453,11 +454,11 @@ nav ul a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 #about-page #about-section {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #about-page h1 {
   text-align: center;
@@ -471,17 +472,22 @@ nav ul a:hover {
 }
 #about-page p {
   line-height: 25px;
-  max-width: 550px;
+  max-width: 650px;
   padding-bottom: 30px;
   font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
+@media (max-width: 450px) {
+  #about-page p {
+    text-align: start;
+  }
+}
 
 #about-profile-image {
   max-width: 400px;
-  padding-left: 30px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 30px;
 }
 #about-profile-image img {
@@ -500,8 +506,8 @@ nav ul a:hover {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -516,11 +522,16 @@ nav ul a:hover {
 }
 #about-certification p {
   line-height: 25px;
-  max-width: 550px;
+  max-width: 650px;
   padding-bottom: 30px;
   font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
+}
+@media (max-width: 450px) {
+  #about-certification p {
+    text-align: start;
+  }
 }
 #about-certification span {
   padding-bottom: 30px;
@@ -548,7 +559,7 @@ nav ul a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 @media (max-width: 450px) {
   #services-page {
@@ -570,8 +581,8 @@ nav ul a:hover {
   font-size: 50px;
 }
 #services-page #service-list-section {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -579,12 +590,12 @@ nav ul a:hover {
   align-items: center;
 }
 #services-page #service-list-section img {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #services-page #service-list-section #service-list {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 30px;
 }
 #services-page #service-list-section #service-list h2 {
@@ -598,11 +609,10 @@ nav ul a:hover {
   list-style-type: none;
 }
 #services-page #service-list-section #service-list ul li a {
-  text-decoration: none;
   color: rgb(0, 135, 167);
 }
 #services-page #service-list-section #service-list ul li a:hover {
-  color: rgb(0, 135, 167);
+  color: rgb(0, 105, 69);
   text-decoration: underline;
 }
 #services-page #service-list-section #service-list div:first-of-type {
@@ -611,26 +621,29 @@ nav ul a:hover {
 }
 
 .service-display-page {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 .service-display-page h1 {
   font-size: 50px;
   color: rgb(0, 105, 69);
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .service-display-page h2 {
-  max-width: 550px;
+  max-width: 650px;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .service-display-page .services-text {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -638,11 +651,15 @@ nav ul a:hover {
 }
 .service-display-page .services-text p {
   line-height: 25px;
-  max-width: 550px;
   padding-bottom: 30px;
   font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
+}
+@media (max-width: 450px) {
+  .service-display-page .services-text p {
+    text-align: start;
+  }
 }
 .service-display-page .services-text strong p {
   font-weight: bolder;
@@ -650,11 +667,12 @@ nav ul a:hover {
 }
 .service-display-page .services-text ul {
   list-style-position: outside;
+  padding-left: 20px;
   padding-bottom: 30px;
 }
 .service-display-page .services-text ul li {
   font-size: 20px;
-  max-width: 550px;
+  max-width: 650px;
   padding-bottom: 10px;
 }
 .service-display-page .services-text a {
@@ -662,21 +680,56 @@ nav ul a:hover {
   color: rgb(0, 135, 167);
 }
 .service-display-page .service-intro-image {
-  max-width: 550px;
-  padding-left: 25px;
-  padding-right: 25px;
+  max-width: 650px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 30px;
 }
 .service-display-page .service-intro-image img {
   width: 100%;
   padding-bottom: 30px;
 }
-.service-display-page .emphasis {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-  max-width: 800px;
+.service-display-page #dse1 {
+  color: rgb(0, 105, 69);
+  font-weight: bolder;
+}
+.service-display-page #dse2 {
+  color: rgb(0, 135, 167);
+}
+.service-display-page #dse3 {
   font-size: 30px;
+  line-height: 35px;
+}
+.service-display-page #computer-infographic {
+  padding-bottom: 30px;
+}
+.service-display-page #computer-infographic img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.service-display-page #dse-services {
+  padding-top: 50px;
+}
+.service-display-page #dse-services div {
+  padding-bottom: 30px;
+}
+.service-display-page #dse-services div h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgb(0, 105, 69);
+  padding-bottom: 30px;
+}
+.service-display-page #dse-services div p {
+  padding-bottom: 30px;
+}
+.service-display-page #dse-services div span {
+  font-style: italic;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+.service-display-page #dse-services div .dse-bold {
+  padding-bottom: 30px;
+  font-weight: bolder;
+  color: rgb(0, 135, 167);
 }/*# sourceMappingURL=style.css.map */
