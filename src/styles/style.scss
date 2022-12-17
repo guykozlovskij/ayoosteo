@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   color: #303030;
 }
 
@@ -721,7 +721,6 @@ nav {
       }
     }
     a {
-      text-decoration: none;
       color: $ayoosteoblue;
     }
   }
@@ -748,6 +747,8 @@ nav {
   }
   #computer-infographic {
     padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
     img {
       width: 100%;
       padding-bottom: $padding-bottom;
@@ -779,5 +780,15 @@ nav {
         color: $ayoosteoblue;
       }
     }
+  }
+  #fhh-logo {
+    padding-bottom: $padding-bottom;
+    max-width: $paragraph;
+    @media(max-width: 500px) {
+      max-width: 300px;
+    }
+  }
+  address{
+    font-size: large;
   }
 }

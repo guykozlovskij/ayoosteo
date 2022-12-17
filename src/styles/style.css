@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   color: #303030;
 }
 
@@ -676,7 +676,6 @@ nav ul a:hover {
   padding-bottom: 10px;
 }
 .service-display-page .services-text a {
-  text-decoration: none;
   color: rgb(0, 135, 167);
 }
 .service-display-page .service-intro-image {
@@ -702,6 +701,8 @@ nav ul a:hover {
 }
 .service-display-page #computer-infographic {
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .service-display-page #computer-infographic img {
   width: 100%;
@@ -732,4 +733,16 @@ nav ul a:hover {
   padding-bottom: 30px;
   font-weight: bolder;
   color: rgb(0, 135, 167);
+}
+.service-display-page #fhh-logo {
+  padding-bottom: 30px;
+  max-width: 650px;
+}
+@media (max-width: 500px) {
+  .service-display-page #fhh-logo {
+    max-width: 300px;
+  }
+}
+.service-display-page address {
+  font-size: large;
 }/*# sourceMappingURL=style.css.map */
