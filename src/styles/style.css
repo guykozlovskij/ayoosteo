@@ -745,4 +745,37 @@ nav ul a:hover {
 }
 .service-display-page address {
   font-size: large;
+}
+
+#blog-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#blog-section h1 {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+#blog-section .blog-intro {
+  max-width: 650px;
+  font-size: 20px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#blog-section .blog-intro .blog-title {
+  padding-bottom: 15px;
+  color: rgb(0, 105, 69);
+  font-weight: bolder;
+}
+#blog-section .blog-intro .blog-preview {
+  padding-bottom: 15px;
+}
+#blog-section .blog-intro .blog-continue {
+  color: rgb(0, 135, 167);
+}
+#blog-section .blog-intro .blog-date {
+  padding-top: 15px;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */

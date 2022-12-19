@@ -784,11 +784,46 @@ nav {
   #fhh-logo {
     padding-bottom: $padding-bottom;
     max-width: $paragraph;
-    @media(max-width: 500px) {
+    @media (max-width: 500px) {
       max-width: 300px;
     }
   }
-  address{
+  address {
     font-size: large;
+  }
+}
+
+//* Blog 📝
+
+#blog-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    font-size: $title;
+    padding-bottom: 50px;
+  }
+  .blog-intro {
+    max-width: $paragraph;
+    font-size: $text-regular;
+    padding-bottom: 70px;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    .blog-title {
+      padding-bottom: 15px;
+      color: $ayoosteogreen;
+      font-weight: bolder;
+    }
+    .blog-preview {
+      padding-bottom: 15px;
+    }
+    .blog-continue {
+      color: $ayoosteoblue;
+    }
+    .blog-date {
+      padding-top: 15px;
+      font-size: 15px;
+    }
   }
 }
