@@ -770,6 +770,7 @@ nav ul a:hover {
   font-weight: bolder;
 }
 #blog-section .blog-intro .blog-preview {
+  line-height: 30px;
   padding-bottom: 15px;
 }
 #blog-section .blog-intro .blog-continue {
@@ -778,4 +779,58 @@ nav ul a:hover {
 #blog-section .blog-intro .blog-date {
   padding-top: 15px;
   font-size: 15px;
+}
+
+.blog-article-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.blog-article-page .blog-text {
+  max-width: 650px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.blog-article-page .blog-text h1 {
+  font-size: 50px;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+.blog-article-page .blog-text p {
+  line-height: 30px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.article-green {
+  color: rgb(0, 105, 69);
+}
+
+.article-bold {
+  font-weight: bold;
+}
+
+.article-ordered-list {
+  list-style-position: outside;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.article-ordered-list li {
+  font-size: 20px;
+  max-width: 650px;
+  padding-bottom: 10px;
+}
+
+.article-unordered-list {
+  list-style-position: outside;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.article-unordered-list li {
+  font-size: 20px;
+  max-width: 650px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

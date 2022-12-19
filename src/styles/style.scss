@@ -30,6 +30,8 @@ $text-regular: 20px;
 //? Text
 $paragraph: 650px;
 $line-height: 25px;
+$article-line-height: 30px;
+
 .italic {
   font-style: italic;
 }
@@ -816,6 +818,7 @@ nav {
       font-weight: bolder;
     }
     .blog-preview {
+      line-height: $article-line-height;
       padding-bottom: 15px;
     }
     .blog-continue {
@@ -825,5 +828,58 @@ nav {
       padding-top: 15px;
       font-size: 15px;
     }
+  }
+}
+.blog-article-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: $padding-bottom;
+  .blog-text {
+    max-width: $paragraph;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    h1 {
+      font-size: $title;
+      text-align: center;
+      font-size: $title;
+      padding-bottom: 50px;
+    }
+    p {
+      line-height: $article-line-height;
+      font-size: $text-regular;
+      padding-bottom: $padding-bottom;
+    }
+  }
+}
+
+.article-green{
+  color: $ayoosteogreen;
+}
+
+.article-bold {
+  font-weight: bold;
+}
+
+.article-ordered-list {
+  list-style-position: outside;
+  padding-left: $padding-left;
+  padding-bottom: 30px;
+  li {
+    font-size: $text-regular;
+    max-width: $paragraph;
+    padding-bottom: 10px;
+  }
+}
+
+.article-unordered-list {
+  list-style-position: outside;
+  padding-left: $padding-left;
+  padding-bottom: 30px;
+  li {
+    font-size: $text-regular;
+    max-width: $paragraph;
+    padding-bottom: 10px;
   }
 }
