@@ -830,6 +830,7 @@ nav {
     }
   }
 }
+
 .blog-article-page {
   display: flex;
   align-items: center;
@@ -850,11 +851,16 @@ nav {
       line-height: $article-line-height;
       font-size: $text-regular;
       padding-bottom: $padding-bottom;
+      text-align: justify;
+      text-justify: inter-word;
+      @media (max-width: 450px) {
+        text-align: start;
+      }
     }
   }
 }
 
-.article-green{
+.article-green {
   color: $ayoosteogreen;
 }
 
@@ -881,5 +887,16 @@ nav {
     font-size: $text-regular;
     max-width: $paragraph;
     padding-bottom: 10px;
+  }
+}
+
+.article-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
   }
 }
