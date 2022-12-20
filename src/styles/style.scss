@@ -6,10 +6,6 @@
   color: #303030;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   padding-top: 150px;
   @media (max-width: 500px) {
@@ -384,7 +380,7 @@ nav {
       font-size: $intro-text;
     }
     p {
-      line-height: $line-height;
+      line-height: $article-line-height;
       max-width: $paragraph;
       padding-bottom: $padding-bottom;
       font-size: $text-regular;
@@ -515,7 +511,7 @@ nav {
     color: $ayoosteogreen;
   }
   p {
-    line-height: $line-height;
+    line-height: $article-line-height;
     max-width: $paragraph;
     padding-bottom: $padding-bottom;
     font-size: $text-regular;
@@ -563,7 +559,7 @@ nav {
     color: $ayoosteoblue;
   }
   p {
-    line-height: $line-height;
+    line-height: $article-line-height;
     max-width: $paragraph;
     padding-bottom: $padding-bottom;
     font-size: $text-regular;
@@ -653,6 +649,7 @@ nav {
           padding-bottom: 30px;
           list-style-type: none;
           a {
+            text-decoration: none;
             color: $ayoosteoblue;
           }
           a:hover {
@@ -820,6 +817,11 @@ nav {
     .blog-preview {
       line-height: $article-line-height;
       padding-bottom: 15px;
+      text-align: justify;
+      text-justify: inter-word;
+      @media (max-width: 450px) {
+        text-align: start;
+      }
     }
     .blog-continue {
       color: $ayoosteoblue;
@@ -844,8 +846,10 @@ nav {
     h1 {
       font-size: $title;
       text-align: center;
-      font-size: $title;
       padding-bottom: 50px;
+      @media (max-width: 450px) {
+        font-size: 40px;
+      }
     }
     p {
       line-height: $article-line-height;
@@ -873,6 +877,7 @@ nav {
   padding-left: $padding-left;
   padding-bottom: 30px;
   li {
+    line-height: $article-line-height;
     font-size: $text-regular;
     max-width: $paragraph;
     padding-bottom: 10px;
@@ -884,6 +889,7 @@ nav {
   padding-left: $padding-left;
   padding-bottom: 30px;
   li {
+    line-height: $article-line-height;
     font-size: $text-regular;
     max-width: $paragraph;
     padding-bottom: 10px;

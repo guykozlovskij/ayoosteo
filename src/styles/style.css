@@ -6,10 +6,6 @@
   color: #303030;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   padding-top: 150px;
 }
@@ -345,7 +341,7 @@ nav ul a:hover {
   font-size: 30px;
 }
 #home-intro-section .home-intro-text p {
-  line-height: 25px;
+  line-height: 30px;
   max-width: 650px;
   padding-bottom: 30px;
   font-size: 20px;
@@ -471,7 +467,7 @@ nav ul a:hover {
   color: rgb(0, 105, 69);
 }
 #about-page p {
-  line-height: 25px;
+  line-height: 30px;
   max-width: 650px;
   padding-bottom: 30px;
   font-size: 20px;
@@ -521,7 +517,7 @@ nav ul a:hover {
   color: rgb(0, 135, 167);
 }
 #about-certification p {
-  line-height: 25px;
+  line-height: 30px;
   max-width: 650px;
   padding-bottom: 30px;
   font-size: 20px;
@@ -609,6 +605,7 @@ nav ul a:hover {
   list-style-type: none;
 }
 #services-page #service-list-section #service-list ul li a {
+  text-decoration: none;
   color: rgb(0, 135, 167);
 }
 #services-page #service-list-section #service-list ul li a:hover {
@@ -772,6 +769,13 @@ nav ul a:hover {
 #blog-section .blog-intro .blog-preview {
   line-height: 30px;
   padding-bottom: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media (max-width: 450px) {
+  #blog-section .blog-intro .blog-preview {
+    text-align: start;
+  }
 }
 #blog-section .blog-intro .blog-continue {
   color: rgb(0, 135, 167);
@@ -796,8 +800,12 @@ nav ul a:hover {
 .blog-article-page .blog-text h1 {
   font-size: 50px;
   text-align: center;
-  font-size: 50px;
   padding-bottom: 50px;
+}
+@media (max-width: 450px) {
+  .blog-article-page .blog-text h1 {
+    font-size: 40px;
+  }
 }
 .blog-article-page .blog-text p {
   line-height: 30px;
@@ -826,6 +834,7 @@ nav ul a:hover {
   padding-bottom: 30px;
 }
 .article-ordered-list li {
+  line-height: 30px;
   font-size: 20px;
   max-width: 650px;
   padding-bottom: 10px;
@@ -837,6 +846,7 @@ nav ul a:hover {
   padding-bottom: 30px;
 }
 .article-unordered-list li {
+  line-height: 30px;
   font-size: 20px;
   max-width: 650px;
   padding-bottom: 10px;
