@@ -432,7 +432,7 @@ nav {
     flex-wrap: wrap;
     padding-bottom: 50px;
     @media (max-width: 600px) {
-      flex-direction: column-reverse;
+      // flex-direction: column-reverse;
       img {
         padding-bottom: 50px;
       }

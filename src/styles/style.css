@@ -389,9 +389,6 @@ nav ul a:hover {
   padding-bottom: 50px;
 }
 @media (max-width: 600px) {
-  #home-appointment-section #book-appointment-div {
-    flex-direction: column-reverse;
-  }
   #home-appointment-section #book-appointment-div img {
     padding-bottom: 50px;
   }
